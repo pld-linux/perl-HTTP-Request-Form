@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	HTTP
-%define	pnam	Request-Form
+%define		pdir	HTTP
+%define		pnam	Request-Form
 Summary:	HTTP::Request::Form - construct HTTP::Request objects for form processing
 Summary(pl):	HTTP::Request::Form - tworzenie obiektów HTTP::Request do przetwarzania formularzy
 Name:		perl-HTTP-Request-Form
