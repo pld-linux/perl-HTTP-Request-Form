@@ -2,9 +2,10 @@
 %define	pdir	HTTP
 %define	pnam	Request-Form
 Summary:	HTTP::Request::Form - Construct HTTP::Request objects for form processing
+Summary(pl):	HTTP::Request::Form - tworzenie obiektów HTTP::Request do przetwarzania formularzy
 Name:		perl-HTTP-Request-Form
 Version:	0.952
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -17,13 +18,22 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This is an extension of the HTTP::Request suite. It allows easy processing
-of forms in a user agent by filling out fields, querying fields,
-selections and buttons and pressing buttons. It uses HTML::TreeBuilder
-generated parse trees of documents (especially the forms parts extracted
-with extract_links) and generates it's own internal representation of
-forms from which it then generates the request objects to process the
-form application.
+This is an extension of the HTTP::Request suite. It allows easy
+processing of forms in a user agent by filling out fields, querying
+fields, selections and buttons and pressing buttons. It uses
+HTML::TreeBuilder generated parse trees of documents (especially the
+forms parts extracted with extract_links) and generates it's own
+internal representation of forms from which it then generates the
+request objects to process the form application.
+
+%description -l pl
+Ten modu³ jest rozszerzeniem zestawu HTTP::Request. Pozwala na ³atwe
+przetwarzanie formularzy po stronie klienta poprzez wype³nianie pól,
+odczyt zawarto¶ci pól, zaznaczanie oraz naciskanie przycisków. U¿ywa
+wygenerowanych przez HTML::TreeBuilder drzew analizy dokumentów
+(szczególnie do czê¶ci formularzy wyci±gniêtych przez extract_links) i
+generuje w³asn± wewnêtrzn± reprezentacjê formularzy, z których
+nastêpnie generuje obiekty ¿±dañ do przetworzenia ca³o¶ci.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
