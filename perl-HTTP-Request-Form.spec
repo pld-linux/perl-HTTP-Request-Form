@@ -9,7 +9,7 @@ Summary:	HTTP::Request::Form - construct HTTP::Request objects for form processi
 Summary(pl):	HTTP::Request::Form - tworzenie obiektów HTTP::Request do przetwarzania formularzy
 Name:		perl-HTTP-Request-Form
 Version:	0.952
-Release:	4
+Release:	5
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
