@@ -5,7 +5,7 @@ Summary:	HTTP::Request::Form - Construct HTTP::Request objects for form processi
 Summary(pl):	HTTP::Request::Form - tworzenie obiektów HTTP::Request do przetwarzania formularzy
 Name:		perl-HTTP-Request-Form
 Version:	0.952
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -13,7 +13,7 @@ BuildRequires:	perl >= 5.6
 BuildRequires:	perl-HTML-Tree
 BuildRequires:	perl-URI
 BuildRequires:	perl-libwww
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -39,7 +39,8 @@ nastêpnie generuje obiekty ¿±dañ do przetworzenia ca³o¶ci.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -53,5 +54,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitelib}/HTTP/Request/Form.pm
+%{perl_vendorlib}/HTTP/Request/Form.pm
 %{_mandir}/man3/*
