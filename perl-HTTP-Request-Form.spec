@@ -6,7 +6,8 @@ Summary(pl):	HTTP::Request::Form - tworzenie obiektów HTTP::Request do przetwarz
 Name:		perl-HTTP-Request-Form
 Version:	0.952
 Release:	4
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	2d8e8af81725b1e5090f5e921f45c6cd
