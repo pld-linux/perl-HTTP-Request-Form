@@ -1,4 +1,4 @@
-%define		perl_sitelib	%(eval "`perl -V:installsitelib`"; echo $installsitelib)
+%include	/usr/lib/rpm/macros.perl
 Summary:	HTTP-Request-Form perl module
 Summary(pl):	Modu³ perla HTTP-Request-Form
 Name:		perl-HTTP-Request-Form
@@ -8,15 +8,13 @@ Copyright:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/HTTP/HTTP-Request-Form-%{version}.tar.gz
-BuildRequires:	perl >= 5.005_03-10
+BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	perl >= 5.005_03-14
 BuildRequires:	perl-URI
 BuildRequires:	perl-libwww
 BuildRequires:	perl-HTML-Tree
 %requires_eq	perl
 Requires:	%{perl_sitearch}
-Requires:	perl-URI
-Requires:	perl-libwww
-Requires:	perl-HTML-Tree
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
