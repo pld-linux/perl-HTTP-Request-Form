@@ -1,9 +1,12 @@
+%define	pdir	HTTP
+%define	pnam	Request-Form
 %include	/usr/lib/rpm/macros.perl
 Summary:	HTTP-Request-Form perl module
 Summary(pl):	Modu³ perla HTTP-Request-Form
 Name:		perl-HTTP-Request-Form
 Version:	0.951
-Release:	2
+Release:	3
+
 License:	GPL
 Group:		Development/Languages/Perl
 Group(cs):	Vývojové prostøedky/Programovací jazyky/Perl
@@ -14,7 +17,7 @@ Group(ja):	³«È¯/¸À¸ì/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Group(pt):	Desenvolvimento/Linguagens/Perl
 Group(ru):	òÁÚÒÁÂÏÔËÁ/ñÚÙËÉ/Perl
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/HTTP/HTTP-Request-Form-%{version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-URI
