@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	HTTP
 %define	pnam	Request-Form
-Summary:	HTTP-Request-Form perl module
-Summary(pl):	Modu³ perla HTTP-Request-Form
+Summary:	HTTP::Request::Form perl module
+Summary(pl):	Modu³ perla HTTP::Request::Form
 Name:		perl-HTTP-Request-Form
 Version:	0.951
 Release:	4
@@ -17,10 +17,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-HTTP-Request-Form perl module.
+HTTP::Request::Form perl module.
 
 %description -l pl
-Modu³ Perla HTTP-Request-Form.
+Modu³ Perla HTTP::Request::Form.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
