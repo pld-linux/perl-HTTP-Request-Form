@@ -1,8 +1,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	HTTP
 %define	pnam	Request-Form
-Summary:	HTTP::Request::Form perl module
-Summary(pl):	Modu³ perla HTTP::Request::Form
+Summary:	HTTP::Request::Form - Construct HTTP::Request objects for form processing
 Name:		perl-HTTP-Request-Form
 Version:	0.952
 Release:	1
@@ -18,10 +17,13 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-HTTP::Request::Form perl module.
-
-%description -l pl
-Modu³ Perla HTTP::Request::Form.
+This is an extension of the HTTP::Request suite. It allows easy processing
+of forms in a user agent by filling out fields, querying fields,
+selections and buttons and pressing buttons. It uses HTML::TreeBuilder
+generated parse trees of documents (especially the forms parts extracted
+with extract_links) and generates it's own internal representation of
+forms from which it then generates the request objects to process the
+form application.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
