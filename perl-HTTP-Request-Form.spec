@@ -39,7 +39,7 @@ nastêpnie generuje obiekty ¿±dañ do przetworzenia ca³o¶ci.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %install
