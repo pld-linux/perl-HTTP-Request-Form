@@ -4,8 +4,8 @@
 Summary:	HTTP::Request::Form perl module
 Summary(pl):	Modu³ perla HTTP::Request::Form
 Name:		perl-HTTP-Request-Form
-Version:	0.951
-Release:	4
+Version:	0.952
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
