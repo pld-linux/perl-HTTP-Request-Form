@@ -2,8 +2,8 @@
 Summary:	HTTP-Request-Form perl module
 Summary(pl):	Modu³ perla HTTP-Request-Form
 Name:		perl-HTTP-Request-Form
-Version:	0.7
-Release:	3
+Version:	0.95
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
