@@ -41,7 +41,7 @@ nastêpnie generuje obiekty ¿±dañ do przetworzenia ca³o¶ci.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
