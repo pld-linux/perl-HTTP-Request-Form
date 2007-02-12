@@ -6,7 +6,7 @@
 %define		pdir	HTTP
 %define		pnam	Request-Form
 Summary:	HTTP::Request::Form - construct HTTP::Request objects for form processing
-Summary(pl):	HTTP::Request::Form - tworzenie obiektów HTTP::Request do przetwarzania formularzy
+Summary(pl.UTF-8):   HTTP::Request::Form - tworzenie obiektÃ³w HTTP::Request do przetwarzania formularzy
 Name:		perl-HTTP-Request-Form
 Version:	0.952
 Release:	5
@@ -32,14 +32,14 @@ forms parts extracted with extract_links) and generates it's own
 internal representation of forms from which it then generates the
 request objects to process the form application.
 
-%description -l pl
-Ten modu³ jest rozszerzeniem zestawu HTTP::Request. Pozwala na ³atwe
-przetwarzanie formularzy po stronie klienta poprzez wype³nianie pól,
-odczyt zawarto¶ci pól, zaznaczanie oraz naciskanie przycisków. U¿ywa
-wygenerowanych przez HTML::TreeBuilder drzew analizy dokumentów
-(szczególnie do czê¶ci formularzy wyci±gniêtych przez extract_links) i
-generuje w³asn± wewnêtrzn± reprezentacjê formularzy, z których
-nastêpnie generuje obiekty ¿±dañ do przetworzenia ca³o¶ci.
+%description -l pl.UTF-8
+Ten moduÅ‚ jest rozszerzeniem zestawu HTTP::Request. Pozwala na Å‚atwe
+przetwarzanie formularzy po stronie klienta poprzez wypeÅ‚nianie pÃ³l,
+odczyt zawartoÅ›ci pÃ³l, zaznaczanie oraz naciskanie przyciskÃ³w. UÅ¼ywa
+wygenerowanych przez HTML::TreeBuilder drzew analizy dokumentÃ³w
+(szczegÃ³lnie do czÄ™Å›ci formularzy wyciÄ…gniÄ™tych przez extract_links) i
+generuje wÅ‚asnÄ… wewnÄ™trznÄ… reprezentacjÄ™ formularzy, z ktÃ³rych
+nastÄ™pnie generuje obiekty Å¼Ä…daÅ„ do przetworzenia caÅ‚oÅ›ci.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
