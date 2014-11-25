@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	HTTP
 %define		pnam	Request-Form
+%include	/usr/lib/rpm/macros.perl
 Summary:	HTTP::Request::Form - construct HTTP::Request objects for form processing
 Summary(pl.UTF-8):	HTTP::Request::Form - tworzenie obiektów HTTP::Request do przetwarzania formularzy
 Name:		perl-HTTP-Request-Form
@@ -15,9 +15,10 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	2d8e8af81725b1e5090f5e921f45c6cd
-BuildRequires:	perl-devel >= 1:5.8.0
+URL:		http://search.cpan.org/dist/HTTP-Request-Form/
 BuildRequires:	perl-HTML-Tree
 BuildRequires:	perl-URI
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-libwww
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
