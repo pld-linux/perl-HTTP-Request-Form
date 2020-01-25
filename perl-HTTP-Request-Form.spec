@@ -4,7 +4,6 @@
 
 %define		pdir	HTTP
 %define		pnam	Request-Form
-%include	/usr/lib/rpm/macros.perl
 Summary:	HTTP::Request::Form - construct HTTP::Request objects for form processing
 Summary(pl.UTF-8):	HTTP::Request::Form - tworzenie obiektów HTTP::Request do przetwarzania formularzy
 Name:		perl-HTTP-Request-Form
